@@ -1,0 +1,736 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* navbar */
+.Nav-div{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 500;
+}
+.logo-div{
+  width: 70px;
+  height: 70px;
+  background-image: url(./components/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5px;
+  
+}
+.Nav-components{
+  height: 100%;
+  width: 450px;
+  margin-left: 200px;
+  
+}
+.Nav-components ul{
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Nav-components-items{
+  width: 70px;
+  font-size: 20px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  /* background-color: #ffdcb3; */
+  cursor: pointer;
+}
+.Nav-components-items a{
+  text-decoration: none;
+  color: #000;
+}
+
+.Nav-components-items a::after{
+  content: "";
+  position: absolute;
+  background-color: #7f5af0;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: 20px;
+  transition: 0.3s;
+}
+
+a:hover::after{
+  width: 100%;
+}
+.Nav-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 40px;
+}
+.icon{
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* navbar end */
+
+/* profile starts */
+
+.profile-layout{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile-container{
+  width: 65%;
+  height: 700px;
+  margin-top: 5%;
+  background-color: #61dafb;
+  display: flex;
+  padding: 50px;
+  font-size: 24px;
+  flex-direction: column;
+}
+.profile-page-club-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* profile ends */
+
+.Main-section{
+  background: url("background.png");
+  width: 100%;
+  /* height: 695px; */
+  height: 830px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* College-info */
+.college-info-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #000; */
+}
+.clg-info-1{
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  /* background-color: bisque; */
+  text-align: center;
+}
+.clg-info-2{
+  width: 100%;
+  height: 450px;
+  padding-top: 50px;
+  /* background-color: #aaaaaa; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.clg-info-3{
+  width: 100%;
+  height: 400px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  /* background-color: bisque; */
+  text-align: center;
+}
+.Text-box-container{
+  width: 400px;
+  height: 350px;
+  border-radius: 40px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 10px 10px 10px 10px #aaaaaa;
+}
+.Text-box-container h3{
+  padding-top: 20px;
+}
+.Text-box-container p{
+  padding: 25px;
+}
+
+.Text-box-container:nth-child(2){
+  position: relative;
+  left: 900px;
+  top: 300px;
+  z-index: 100;
+}
+.Mid-section-image{
+  width: 400px;
+  height: 350px;
+
+  background: url("./midsection_image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.container{
+  width: 100%;
+  height: 1500px;
+  /* background-color: aqua; */
+}
+.Container-topHeading{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+
+
+
+/* college-info ends */
+
+/* events-section */
+
+.Events-section{
+  width: 98%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  background-color:white ;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px 10px #aaaaaa;
+  border-radius: 50px;
+}
+.Events-section-heading{
+  text-align: center;
+  padding-top: 40px;
+}
+.Events-section-more-button{
+  width: 100px;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  margin-left: 85%;
+}
+.Events-card-layout{
+  width: 90%;
+  height: 600px;
+  justify-content: space-between;
+  display: flex;
+  /* background-color: #61dafb; */
+  margin-top: 30px;
+  margin-left: 70px;
+  padding: 50px;
+  
+  /* align-items: center; */
+}
+.left-arrow{
+  font-size: 40px;
+  margin-top: 15%;
+  cursor: pointer;
+  /* margin-right: 20px; */
+}
+.right-arrow{
+  font-size: 40px;
+  margin-top: 15%;
+  cursor: pointer;
+  /* margin-left: 20px; */
+
+}
+.Events-card-container{
+  width: 280px;
+  flex-shrink: 0;
+  height: 400px;
+  border-radius: 50px;
+  margin-right: 70px;
+  display: inline-block;
+  box-shadow: 2px 2px 10px 10px rgb(0 0 0 / 12%);
+  cursor: pointer;
+  /* background-color:bisque; */
+
+}
+.Events-card-container:nth-child(1){
+  margin-left: 35px;
+}
+.Events-club-logo{
+  width: 100%;
+  height: 60%;
+  /* background-color: aqua; */
+  border-radius: 50px 50px 0 0;
+  border-bottom: #000 2px solid;
+}
+.events-card-logo{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.Events-card-content {
+  display: flex;
+  flex-direction: column;
+}
+.Events-card-sub-content{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.Events-card-sub-content button{
+  background-color: transparent;
+  border: none;
+}
+
+/* Swiper start */
+
+.slider{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+.slider::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* club-section */
+.club-section{
+width: 100%;
+height: 650px;
+display: flex;
+flex-direction: column;
+/* background-color: #7f5af0; */
+}
+.more-button{
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  margin-right: 80px;
+  justify-content: end;
+}
+.club-section-heading{
+  text-align: center;
+  padding-top: 50px;
+}
+.scroll-wrapper{
+  width: 80%;
+  height: 250px;
+  margin: 50px 10%;
+  display: flex;
+  overflow: hidden;
+  /* background-color: #aaaaaa; */
+}
+.scroll-wrapper2{
+  width: 80%;
+  height: 250px;
+  margin: 40px 10%;
+  display: flex;
+  overflow: hidden;
+  /* background-color: #aaaaaa; */
+}
+@keyframes scrollX {
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+    
+  } 
+}
+
+.scroll-tracker{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  width: 100%;
+  animation: scrollX 30s linear infinite;
+}
+.scroll-tracker2{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  width: 100%;
+  animation: scrollX 30s linear infinite;
+}
+.club-card{
+  display: grid;
+  place-items: center;
+  width: 150px;
+  flex-shrink: 0;
+  height: 150px;
+  border-radius: 50%;
+  margin: 50px;
+  cursor: pointer;
+  
+}
+.club-card-logo{
+  object-fit: fill;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: #000 2px solid;
+
+}
+.club-card:hover{
+  scale: 1.15;;
+}
+.club-card2{
+  display: grid;
+  place-items: center;
+  width: 150px;
+  position: relative;
+  left: 125px;
+  flex-shrink: 0;
+  height: 150px;
+  border-radius: 50%;
+  margin: 50px;
+  cursor: pointer;
+  background-color: #282c34;
+}
+.club-card2:hover{
+  scale: 1.15;;
+}
+.scroll-tracker:hover{
+  animation-play-state: paused;
+}
+.scroll-tracker2:hover{
+  animation-play-state: paused;
+}
+/* events-section ends */
+
+/* events-page */
+
+.events-page-container{
+  display: flex;
+  width: 100%;
+  height: 1700px;
+  flex-direction: column;
+}
+.events-page-top-section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.events-page-heading{
+  margin-left: 45%;
+  margin-top: 50px;
+}
+.events-page-search-button{
+  margin-top: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.events-page-card-container{
+  width: 90%;
+  height: 1000px;
+  margin-left: 5%;
+  margin-top: 100px;
+  /* background-color: #000; */
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding-left: 8%;
+  padding-top: 2%;
+}
+.searchbar{
+  width: 200px;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 25%;
+  height: 50px;
+}
+.events-page-card-layout{
+  width: 280px;
+  height: 400px;
+  border-radius: 50px;
+  margin-right: 70px;
+  display: inline-block;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+  cursor: pointer;
+  background-color: white;
+}
+
+/* events-page end */
+/* clubs-page */
+
+.clubs-page-layout{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.clubs-page-heading{
+  margin-left: 45%;
+  margin-top: 50px;
+}
+.clubs-page-container{
+  width: 90%;
+  height: 1000px;
+  margin-left: 5%;
+  margin-top: 100px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding-left: 8%;
+  padding-top: 2%;
+}
+.clubs-page-card-container{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clubs-page-card-layout{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: beige; */
+  cursor: pointer;
+  margin-top: 20px;
+}
+.clubs-page-card-layout:hover{
+  scale: 1.05;
+}
+.clubs-page-card-content{
+  color: #000;
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 20px;
+  border: #000 1px solid;
+  border-radius: 20px;
+}
+/* clubs-page-end */
+
+.loginbody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+
+/* Admin */
+
+.Adminlogin{
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+.admin-top-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 140px;
+  /* background-color: bisque; */
+}
+.admin-top-section-logo{
+  width: 100px;
+  height: 100px;
+  margin-left: 4%;
+  
+  background: url('./components/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 1%;
+  background-color: white;
+}
+.admin-page-profile{
+  font-size: 42px;
+  border: #000 1px solid;
+  border-radius: 50%;
+  margin-left: 80%;
+  cursor: pointer;
+}
+.Admin-middle-section{
+  display: flex;
+  width: 100%;
+  height: 250px;
+  /* background-color: #61dafb; */
+  align-items: center;
+  justify-content: space-around;
+
+}
+.Admin-middle-section-button{
+  width: 250px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: #000;
+  cursor: pointer;
+  color: #ffffff;
+}
+.Add-student-form-layout{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.Add-student-form-container{
+  width: 40%;
+  margin-top: 10%;
+  height: 500px;
+  /* background-color: #282c34; */
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
+}
+.Add-studnet-form{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 10px;
+}
+.Add-event-form-layout{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Add-event-form-container{
+  width: 40%;
+  height: 500px;
+  margin-top: 10%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
+}
+.Add-event-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
+  margin-left: 20px;
+  justify-content: space-around;
+}
+/* Admin end */
+.verticalLine{
+  height: 30px;
+  width: 5px;
+  background-color: #7f5af0;
+
+}
+
+/* single-event-page */
+
+.single-event-page-layout{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.single-event-card-container{
+  width: 45%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color:#61dafb; */
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
+}
+.single-event-car-poster{
+  width: 60%;
+  height: 350px;
+  margin-left: 125px;
+  margin-top: 50px;
+  border: #000 2px solid;
+  /* background-color: antiquewhite; */
+}
+.single-event-page-content{
+  width: 100%;
+  font-size: 26px;
+  height: 600px;
+  /* background-color:beige; */
+  margin-top: 50px;
+}
+.single-event-page-content p{
+  margin-left: 30px;
+  margin-top: 50px;
+  size: 30px;
+}
+.single-event-page-reminder{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.single-event-page-reminder span{
+  margin-left: 70px;
+  cursor: pointer;
+  size: 40px;
+}
+
+
+/* single-event-page-end */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
